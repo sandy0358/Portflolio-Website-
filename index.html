@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style">
+    
+    <!-- Load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+        <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Port<span>folio</span></a>
+            <div class="menu-btn">
+                <div class="menu-btn__lines"></div>
+            </div>
+            <ul class="nav-items">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="text-content" data-aos="fade-right">
+                    <h1>Hi, I'm <span class="highlight">Sandip Sonawane</span></h1>
+                    <p>A passionate Web Developer crafting beautiful and functional websites</p>
+                    <div class="cta-buttons">
+                        <a href="#portfolio" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="assets/images/Profiles1.png" alt="Hero Image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/images/profiles.png" alt="About Image">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <p>I'm a passionate web developer with over 1 years of experience in creating beautiful and functional websites. I specialize in front-end development and love bringing creative designs to life.</p>
+                    
+                    <div class="skill-category">
+                        <h4>Development Skills</h4>
+                        <div class="skill-item">
+                            <div class="progress-bar">
+                                <div class="progress" data-value="90%" style="width: 90%"></div>
+                            </div>
+                            <p>HTML/CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="progress-bar">
+                                <div class="progress" data-value="85%" style="width: 85%"></div>
+                            </div>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="progress-bar">
+                                <div class="progress" data-value="80%" style="width: 80%"></div>
+                            </div>
+                            <p>React</p>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>15+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>1+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and dynamic websites using modern technologies</p>
+                    <ul class="service-list">
+                        <li>Custom Website Development</li>
+                        <li>Responsive Design</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Designing websites with mobile users in mind</p>
+                    <ul class="service-list">
+                        <li>Mobile-Friendly Layouts</li>
+                        <li>Touch-Friendly Interface</li>
+                        <li>Cross-Device Testing</li>
+                    </ul>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving website visibility in search engines</p>
+                    <ul class="service-list">
+                        <li>Keyword Research</li>
+                        <li>On-Page Optimization</li>
+                        <li>Performance Metrics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Portfolio</h2>
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Design</button>
+                <button class="filter-btn" data-filter="brand">Branding</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web" data-aos="fade-up">
+                    <div class="portfolio-img">
+                        <img src="assets/images/dev.jpg" alt="Portfolio Item 1">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Web Project 1</h3>
+                        <p>Web Development</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-img">
+                        <img src="assets/images/img.jpg" alt="Portfolio Item 2">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>App Project</h3>
+                        <p>Mobile App</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="brand" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-img">
+                        <img src="assets/images/app.webp" alt="Portfolio Item 3">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity</h3>
+                        <p>Branding</p>
+                        <a href="#" class="portfolio-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item" data-aos="fade-up">
+                    <div class="client-image">
+                        <img src="assets/images/hero.jpg" alt="Client 1">
+                    </div>
+                    <h4>Jane Smith</h4>
+                    <p class="client-role">CEO, Tech Company</p>
+                    <p class="testimonial-text">"Working with Sandip was an absolute pleasure. He delivered our project on time and exceeded our expectations."</p>
+                </div>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="client-image">
+                        <img src="assets/images/dev1.jpg" alt="Client 2">
+                    </div>
+                    <h4>Mike Johnson</h4>
+                    <p class="client-role">Marketing Director</p>
+                    <p class="testimonial-text">"The website Sandip created for us has significantly improved our online presence and user engagement."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>Sandipsonawane0358@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+91 7620415202</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Aurangabad, Maharashtra, India</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com/in/sandip-sonawane-s358a0mom007" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sandy0358" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Sandip<span>Sonawane</span></h3>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-25 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html> 
